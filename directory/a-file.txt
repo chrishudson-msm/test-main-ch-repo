@@ -1,1 +1,2 @@
 A file within a directory that has changed
+Another thing.
