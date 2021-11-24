@@ -5,10 +5,12 @@ on:
     branches: [ test-actions ]
 
 jobs:
-  build:
+  deploy:
     runs-on: ubuntu-latest
     steps:
-      - id: deploy
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: deploy
         uses: google-github-actions/deploy-appengine@v0.4.0
         with:
           working_directory: ./directory
