@@ -11,7 +11,7 @@ jobs:
       - id: deploy
         uses: google-github-actions/deploy-appengine@v0.4.0
         with:
-          working_directory: directory/
+          working_directory: ./directory
           deliverables: api.yaml app.yaml dispatch.yaml index.yaml upload.yaml upload-processing.yaml
           credentials: ${{ secrets.GCP_SA_KEY }}
           promote: true
